@@ -289,8 +289,7 @@ public:
 		}
 		pos.node_->next_node = new Node(value, pos.node_->next_node);
 		++size_;
-		return Iterator(pos.node_->next_node);
-		// Заглушка. Реализуйте метод самостоятельно
+		return Iterator(pos.node_->next_node);		
 	}
 
 	void PopFront() noexcept {
@@ -299,8 +298,7 @@ public:
 			delete head_.next_node;
 			head_.next_node = new_head;
 			--size_;
-		}
-		// Реализуйте метод самостоятельно
+		}		
 	}
 
 	/*
@@ -312,8 +310,7 @@ public:
 		Node* elem_to_del = elem->next_node;
 		elem->next_node = elem_to_del->next_node;
 		delete elem_to_del;
-		--size_;
-		// Заглушка. Реализуйте метод самостоятельно
+		--size_;		
 		return Iterator(elem->next_node);
 	}
 
