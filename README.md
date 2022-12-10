@@ -1,21 +1,22 @@
 # cpp-single-linked-list
+## Additional languages: [Русский](Russian/README.md)
 
-## Реализация односвязного списка.
+## Single linked list realisation.
 
-#### Реализован функционал:
+#### Features:
 
-  * Итераторы;  
-  * Операции сравнения ==, !=, <, >, <=, >=;  
-  * Обмен содержимого двух списков с использованием метода swap и шаблонной функции swap;  
-  * Конструирование односвязного списка на основе initializer_list.;  
-  * Конструктор копирования и операция присваивания.
+  * Realisation of iterators.
+  * Realisation of comparison operators ==, !=, <, >, <=, >=.
+  * Realisation of swapping the contents of two lists using swap method and swap template function.
+  * Construction of single linked list based on initializer_list.
+  * Realisation of copy constructor and assignment operator.
 
-#### Реализация методов:
-  * **GetSize.** Возвращает количество элементов в списке;
-  *	**IsEmpty.** Возвращает true, если список пустой, и false в противном случае.
-  *	**PushFront.** Делает вставки элемента в начало односвязного списка
-  *	**Clear.** очищает список.
-  *	**PopFront.** Удаляет первый элемента непустого списка за время O(1). Не выбрасывает исключений.
-  *	**InsertAfter.** За время O(1) вставляет в список новое значение следом за элементом, на который ссылается переданный в InsertAfter итератор. 
-  *	**EraseAfter.** За время O(1) удаляет из списка элемент, следующий за элементом, на который ссылается переданный в InsertAfter итератор.
-  *	**before_begin** и **cbefore_begin.** Возвращают итераторы, ссылающиеся на фиктивную позицию перед первым элементом списка.
+#### Main methods:
+  * **GetSize.** Returns the number of items in the list.
+  *	**IsEmpty.** Returns true if the list is empty, or false otherwise.
+  *	**PushFront.** Inserts an element at the beginning of a single-linked list.
+  *	**Clear.** Clears the list.
+  *	**PopFront.** Removes the first item of a non-empty list in O(1) time. Does not throw exceptions.
+  *	**InsertAfter.** Inserts a new value into the list after the position passed to InsertAfter method in O(1) time.
+  *	**EraseAfter.** Removes an element from the list after the position passed to EraseAfter method in O(1) time.
+  *	**before_begin** и **cbefore_begin.** Returns iterator that refer to the mock position before the first item in the list.
